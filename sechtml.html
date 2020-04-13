@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <title>HTML</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>El espectro Front-End</h1>
+        </a>
+        <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
+        <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
+        <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="core.html">Core</a></li>
+                <li><a href="modulebundlers.html">Module Bundler</a></li>
+                <li><a href="packagemanagers.html">Package Manager</a></li>
+                <li><a href="preprocessors.html">JS & CSS Preprocessors</a></li>
+                <li><a href="jsframeworks.html">JS Frameworks</a></li>
+                <li><a href="versioncontrol.html">Version control</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="sec">
+        <h2>HTML</h2>
+        <img src="img/html5.png" alt="HTML" title="HTML">
+        <p>El HTML se escribe en forma de «etiquetas», rodeadas por corchetes angulares (>,/). El HTML también puede
+            describir, hasta un cierto punto, la apariencia de un documento, y puede incluir o hacer referencia a un
+            tipo de programa llamado script, el cual puede afectar el comportamiento de navegadores web y otros
+            procesadores de HTML.</p>
+        <p>Los elementos son la estructura básica de HTML. Los elementos tienen dos propiedades básicas: atributos y
+            contenido. Cada atributo y contenido tiene ciertas restricciones para que se considere válido al documento
+            HTML. Un elemento generalmente tiene una etiqueta de inicio y una etiqueta de cierre. Los atributos del
+            elemento están contenidos en la etiqueta de inicio y el contenido está ubicado entre las dos etiquetas.
+            Algunos elementos, no tienen contenido ni llevan una etiqueta de cierre.</p>
+        <p>En su mayoría de los atributos de un elemento son pares nombre-valor, separados por un signo de igual «=» y
+            escritos en la etiqueta de comienzo de un elemento, después del nombre del elemento. El valor puede estar
+            rodeado por comillas dobles o simples, aunque ciertos tipos de valores pueden estar sin comillas en HTML
+            (pero no en XHTML).</p>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <figcaption>HTML basics</figcaption>
+        </figure>
+        <p>Información extraída de <a href="https://es.wikipedia.org/wiki/HTML">Wikipedia</a></p>
+        <ul>
+            <li>Más en esta sección</li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JavaScript</a></li>
+        </ul>
+        <ul class="redes">
+            <li><a href="" aria-label="Compartir en Facebook"><span class="fab fa-facebook-square"></span></a></li>
+            <li><a href="" aria-label="Compartir en Twitter"><span class="fab fa-twitter-square"></span></a></li>
+            <li><a href="" aria-label="Compartir en Youtube"><span class="fab fa-youtube-square"></span></a></li>
+        </ul>
+
+    </main>
+    <footer>
+        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
+            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <title>Parcel</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>El espectro Front-End</h1>
+        </a>
+        <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
+        <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
+        <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="core.html">Core</a></li>
+                <li><a href="modulebundlers.html">Module Bundler</a></li>
+                <li><a href="packagemanagers.html">Package Manager</a></li>
+                <li><a href="preprocessors.html">JS & CSS Preprocessors</a></li>
+                <li><a href="jsframeworks.html">JS Frameworks</a></li>
+                <li><a href="versioncontrol.html">Version control</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="sec">
+        <h2>Parcel</h2>
+        <img src="img/parcel1.png" alt="Parcel" title="Parcel">
+        <p>Parcel transforma un árbol de recursos en un árbol de paquetes. Otros empaquetadores están basados
+            fundamentalmente en recursos JavaScript, con otros formatos añadidos - por ejemplo insertados inline como
+            strings en archivos JS. Parcel es agnóstico con respecto a tipos de archivos - y funcionará con recursos de
+            cualquier tipo en la forma que uno esperaría, sin necesidad de configurarlo. Hay tres pasos en el proceso de
+            empaquetamiento de Parcel.</p>
+        <p>Parcel toma como entrada un único recurso de partida, que puede ser de cualquier tipo: un archivo JS, HTML,
+            CSS, imágen, etc. Existen varios tipos de recursos definidos en Parcel, cada uno de los cuales saben como
+            manipular determinados tipos de archivos. Los recursos son analizados, sus dependencias extraídas, y luego
+            transformadas a su forma compilada final. Esto genera un árbol de recursos.</p>
+        <p>Una vez que el árbol de recursos fue construído, los recursos son ubicados en un árbol de paquetes. Se crea
+            un paquete para el recurso de partida, y para cada import() dinámico se crean paquetes hijos, los cuales
+            hacen que ocurra la separación de código.</p>
+        <p>Luego de que el árbol de paquetes es construído, cada paquete es procesado por un empaquetador específico al
+            tipo de archivo, y este se encarga de escribir el paquete en cuestión hacia un archivo. Los empaquetadores
+            saben como combinar el código de cada recurso juntándolos todos en el archivo final que es cargado por el
+            navegador.</p>
+        <p>Información extraída de <a href="https://parceljs.org/how_it_works.html">Parcel</a></p>
+        <ul>
+            <li>Más en esta sección</li>
+            <li><a href="">Webpack</a></li>
+            <li><a href="">Rollup</a></li>
+        </ul>
+        <ul class="redes">
+            <li><a href="" aria-label="Compartir en Facebook"><span class="fab fa-facebook-square"></span></a></li>
+            <li><a href="" aria-label="Compartir en Twitter"><span class="fab fa-twitter-square"></span></a></li>
+            <li><a href="" aria-label="Compartir en Youtube"><span class="fab fa-youtube-square"></span></a></li>
+        </ul>
+    </main>
+    <footer>
+        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
+            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

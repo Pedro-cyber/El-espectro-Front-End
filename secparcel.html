@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg">
     <title>Parcel</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <h1>El espectro Front-End</h1>
-        </a>
+        <img id="back" src="img/back.svg" alt="">
+        <div class="headlogo">
+            <a href="index.html">
+                <h1>El espectro Front-End</h1>
+            </a>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
         <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
         <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
         <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
@@ -31,12 +36,24 @@
     </header>
     <main class="sec">
         <h2>Parcel</h2>
-        <img src="img/parcel1.png" alt="Parcel" title="Parcel">
+        <picture id="highlight">
+            <source srcset="img/parcel3x.png" media="(max-width: 450px)">
+            <source srcset="img/parcel2x.png" media="(max-width: 850px)">
+            <source srcset="img/parcel1x.png" media="(max-width: 1500px)">
+            <img src="img/parcel1x.png" alt="Parcel" title="Parcel">
+        </picture>
         <p>Parcel transforma un árbol de recursos en un árbol de paquetes. Otros empaquetadores están basados
             fundamentalmente en recursos JavaScript, con otros formatos añadidos - por ejemplo insertados inline como
             strings en archivos JS. Parcel es agnóstico con respecto a tipos de archivos - y funcionará con recursos de
             cualquier tipo en la forma que uno esperaría, sin necesidad de configurarlo. Hay tres pasos en el proceso de
             empaquetamiento de Parcel.</p>
+        <picture>
+            <source srcset="img/parcelb3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/parcelb2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/parcelb1x.jpg" media="(max-width: 1500px)">
+            <img src="img/parcelb1x.jpg" alt="Parcel" title="Parcel">
+        </picture>
+
         <p>Parcel toma como entrada un único recurso de partida, que puede ser de cualquier tipo: un archivo JS, HTML,
             CSS, imágen, etc. Existen varios tipos de recursos definidos en Parcel, cada uno de los cuales saben como
             manipular determinados tipos de archivos. Los recursos son analizados, sus dependencias extraídas, y luego
@@ -44,6 +61,12 @@
         <p>Una vez que el árbol de recursos fue construído, los recursos son ubicados en un árbol de paquetes. Se crea
             un paquete para el recurso de partida, y para cada import() dinámico se crean paquetes hijos, los cuales
             hacen que ocurra la separación de código.</p>
+        <picture>
+            <source srcset="img/parcela3x.png" media="(max-width: 450px)">
+            <source srcset="img/parcela2x.png" media="(max-width: 850px)">
+            <source srcset="img/parcela1x.png" media="(max-width: 1500px)">
+            <img src="img/parcela1x.png" alt="Parcel" title="Parcel">
+        </picture>
         <p>Luego de que el árbol de paquetes es construído, cada paquete es procesado por un empaquetador específico al
             tipo de archivo, y este se encarga de escribir el paquete en cuestión hacia un archivo. Los empaquetadores
             saben como combinar el código de cada recurso juntándolos todos en el archivo final que es cargado por el
@@ -61,8 +84,25 @@
         </ul>
     </main>
     <footer>
-        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
-            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+        <picture class="clip-footer-left">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <h3>El espectro Front-End</h3>
+        <picture class="clip-footer-center">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <picture class="clip-footer-right">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
     </footer>
     <script type="text/javascript" src="index.js"></script>
 </body>

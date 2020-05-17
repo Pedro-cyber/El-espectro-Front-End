@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg">
     <title>Module Bundlers</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <h1>El espectro Front-End</h1>
-        </a>
+        <img id="back" src="img/back.svg" alt="">
+        <div class="headlogo">
+            <a href="index.html">
+                <h1>El espectro Front-End</h1>
+            </a>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
         <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
         <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
         <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
@@ -33,20 +38,54 @@
         <h2>Module Bundlers</h2>
         <div>
             <a href="secparcel.html">
-                <img src="img/parcel1.png" alt="Parcel" title="Parcel">
+                <picture>
+                    <source srcset="img/parcel3x.png" media="(max-width: 450px)">
+                    <source srcset="img/parcel2x.png" media="(max-width: 850px)">
+                    <source srcset="img/parcel1x.png" media="(max-width: 1500px)">
+                    <img src="img/parcel1x.png" alt="Parcel" title="Parcel">
+                </picture>
+
             </a>
             <a href="">
-                <img src="img/webpack1.png" alt="Webpack" title="Webpack">
+                <picture>
+                    <source srcset="img/webpack3x.png" media="(max-width: 450px)">
+                    <source srcset="img/webpack2x.png" media="(max-width: 850px)">
+                    <source srcset="img/webpack1x.png" media="(max-width: 1500px)">
+                    <img src="img/webpack1x.png" alt="Webpack" title="Webpack">
+                </picture>
             </a>
             <a href="">
-                <img src="img/rollup.png" alt="Rollup" title="Rollup">
+                <picture>
+                    <source srcset="img/rollup3x.jpg" media="(max-width: 450px)">
+                    <source srcset="img/rollup2x.jpg" media="(max-width: 850px)">
+                    <source srcset="img/rollup1x.jpg" media="(max-width: 1500px)">
+                    <img src="img/rollup1x.jpg" alt="Rollup" title="Rollup">
+                </picture>
+
             </a>
         </div>
 
     </main>
     <footer>
-        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
-            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+        <picture class="clip-footer-left">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <h3>El espectro Front-End</h3>
+        <picture class="clip-footer-center">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <picture class="clip-footer-right">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
     </footer>
     <script type="text/javascript" src="index.js"></script>
 </body>

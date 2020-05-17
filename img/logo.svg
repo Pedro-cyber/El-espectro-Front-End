@@ -1,0 +1,21 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="59.740861" width="52.666829" y="277.230818" x="166.240635" stroke-width="7.5" fill="#0a5b91"/>
+  <rect id="svg_3" height="59.740861" width="52.666829" y="210.564215" x="166.240635" stroke-width="7.5" fill="#0a5b91"/>
+  <rect id="svg_4" height="59.740861" width="52.666829" y="277.230818" x="227.722061" stroke-width="7.5" fill="#0a5b91"/>
+  <rect id="svg_5" height="59.740861" width="52.666829" y="211.304953" x="227.722061" stroke-width="7.5" fill="#0a5b91"/>
+  <rect id="svg_6" height="59.740861" width="52.666829" y="141.675383" x="166.981375" stroke-width="7.5" fill="#0a5b91"/>
+  <rect id="svg_7" height="59.740861" width="52.666829" y="277.230818" x="288.46275" stroke-width="7.5" fill="#0a5b91"/>
+  <rect transform="rotate(13 328.1294555664063,134.50880432128895) " id="svg_8" height="59.740861" width="52.666829" y="104.638375" x="301.796065" stroke-width="7.5" fill="#0a5b91"/>
+  <rect transform="rotate(13 408.1293945312504,215.24948120117176) " id="svg_11" height="59.740861" width="52.666829" y="185.379041" x="381.795991" stroke-width="7.5" fill="#0a5b91"/>
+  <rect id="svg_12" height="59.740861" width="52.666829" y="77.231003" x="381.795991" stroke-width="7.5" fill="#0a5b91"/>
+  <path stroke="#000000" id="svg_13" d="m475.946162,259.085926l45.967431,-36.995934l-45.967431,-36.9962l26.272714,-21.142884l72.24572,58.139084l-72.24572,58.157122" stroke-width="0" fill="#8e8e8e"/>
+  <path transform="rotate(-180 62.242835998535156,219.87680053710938) " stroke="#000000" id="svg_15" d="m12.983617,256.86371l45.96743,-36.99594l-45.96743,-36.9962l26.27272,-21.14288l72.24572,58.13908l-72.24572,58.15712" stroke-width="0" fill="#8e8e8e"/>
+ </g>
+</svg>

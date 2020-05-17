@@ -12,4 +12,3 @@ function ocultar() {
 }
 
 document.getElementById("close").addEventListener("click", ocultar, false);
-

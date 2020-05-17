@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg">
     <title>El espectro Front-End</title>
 </head>
 
 <body>
     <header>
-        <h1>El espectro Front-End</h1>
+        <div class="headlogo">
+            <h1>El espectro Front-End</h1>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
         <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
+
         <div class="separacion"></div>
     </header>
     <main class="ind">
         <div class="indesk">
-            <img src="img/frontend.png" alt="Herramientas Front-End">
+            <picture>
+                <source srcset="img/frontend3x.png" media="(max-width: 450px)">
+                <source srcset="img/frontend2x.png" media="(max-width: 850px)">
+                <source srcset="img/frontend1x.png" media="(max-width: 1500px)">
+                <img src="img/frontend1x.png" alt="Herramientas Front-End">
+            </picture>
+
             <ul>
                 <li><a href="core.html">
                         <h2 lang="en">Core</h2>
@@ -41,8 +52,25 @@
         </div>
     </main>
     <footer>
-        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
-            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+        <picture class="clip-footer-left">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <h3>El espectro Front-End</h3>
+        <picture class="clip-footer-center">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <picture class="clip-footer-right">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
     </footer>
 </body>
 

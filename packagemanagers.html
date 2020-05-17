@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg">
     <title>Package Managers</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <h1>El espectro Front-End</h1>
-        </a>
+        <img id="back" src="img/back.svg" alt="">
+        <div class="headlogo">
+            <a href="index.html">
+                <h1>El espectro Front-End</h1>
+            </a>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
         <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
         <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
         <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
@@ -32,22 +37,52 @@
     <main class="cat">
         <h2>Package Managers</h2>
         <div>
-
             <a href="secnpm.html">
-                <img src="img/npm.png" alt="NPM" title="NPM">
+                <picture>
+                    <source srcset="img/npm3x.png" media="(max-width: 450px)">
+                    <source srcset="img/npm2x.png" media="(max-width: 850px)">
+                    <source srcset="img/npm1x.png" media="(max-width: 1500px)">
+                    <img src="img/npm1x.png" alt="NPM" title="NPM">
+                </picture>
             </a>
             <a href="">
-                <img src="img/bower.png" alt="Bower" title="Bower">
+                <picture>
+                    <source srcset="img/bower3x.png" media="(max-width: 450px)">
+                    <source srcset="img/bower2x.png" media="(max-width: 850px)">
+                    <source srcset="img/bower1x.png" media="(max-width: 1500px)">
+                    <img src="img/bower1x.png" alt="Bower" title="Bower">
+                </picture>
             </a>
             <a href="">
-                <img src="img/codekit.jpg" alt="Codekit" title="Codekit">
+                <picture>
+                    <source srcset="img/codekit3x.jpg" media="(max-width: 450px)">
+                    <source srcset="img/codekit2x.jpg" media="(max-width: 850px)">
+                    <source srcset="img/codekit1x.jpg" media="(max-width: 1500px)">
+                    <img src="img/codekit1x.jpg" alt="Codekit" title="Codekit">
+                </picture>
             </a>
         </div>
-
     </main>
     <footer>
-        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
-            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+        <picture class="clip-footer-left">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <h3>El espectro Front-End</h3>
+        <picture class="clip-footer-center">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <picture class="clip-footer-right">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
     </footer>
     <script type="text/javascript" src="index.js"></script>
 </body>

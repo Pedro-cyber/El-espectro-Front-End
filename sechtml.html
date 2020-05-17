@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg">
     <title>HTML</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <h1>El espectro Front-End</h1>
-        </a>
+        <img id="back" src="img/back.svg" alt="">
+        <div class="headlogo">
+            <a href="index.html">
+                <h1>El espectro Front-End</h1>
+            </a>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
         <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
         <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
         <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
@@ -31,16 +36,33 @@
     </header>
     <main class="sec">
         <h2>HTML</h2>
-        <img src="img/html5.png" alt="HTML" title="HTML">
+        <picture id="highlight">
+            <source srcset="img/html3x.png" media="(max-width: 450px)">
+            <source srcset="img/html2x.png" media="(max-width: 850px)">
+            <source srcset="img/html1x.png" media="(max-width: 1500px)">
+            <img src="img/html1x.png" alt="HTML" title="HTML">
+        </picture>
         <p>El HTML se escribe en forma de «etiquetas», rodeadas por corchetes angulares (>,/). El HTML también puede
             describir, hasta un cierto punto, la apariencia de un documento, y puede incluir o hacer referencia a un
             tipo de programa llamado script, el cual puede afectar el comportamiento de navegadores web y otros
             procesadores de HTML.</p>
+        <picture>
+            <source srcset="img/htmlb3x.png" media="(max-width: 450px)">
+            <source srcset="img/htmlb2x.png" media="(max-width: 850px)">
+            <source srcset="img/htmlb1x.png" media="(max-width: 1500px)">
+            <img src="img/htmlb1x.png" alt="HTML" title="HTML">
+        </picture>
         <p>Los elementos son la estructura básica de HTML. Los elementos tienen dos propiedades básicas: atributos y
             contenido. Cada atributo y contenido tiene ciertas restricciones para que se considere válido al documento
             HTML. Un elemento generalmente tiene una etiqueta de inicio y una etiqueta de cierre. Los atributos del
             elemento están contenidos en la etiqueta de inicio y el contenido está ubicado entre las dos etiquetas.
             Algunos elementos, no tienen contenido ni llevan una etiqueta de cierre.</p>
+        <picture>
+            <source srcset="img/htmla3x.gif" media="(max-width: 450px)">
+            <source srcset="img/htmla2x.gif" media="(max-width: 850px)">
+            <source srcset="img/htmla1x.gif" media="(max-width: 1500px)">
+            <img src="img/htmla1x.gif" alt="HTML" title="HTML">
+        </picture>
         <p>En su mayoría de los atributos de un elemento son pares nombre-valor, separados por un signo de igual «=» y
             escritos en la etiqueta de comienzo de un elemento, después del nombre del elemento. El valor puede estar
             rodeado por comillas dobles o simples, aunque ciertos tipos de valores pueden estar sin comillas en HTML
@@ -65,8 +87,25 @@
 
     </main>
     <footer>
-        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
-            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+        <picture class="clip-footer-left">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <h3>El espectro Front-End</h3>
+        <picture class="clip-footer-center">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <picture class="clip-footer-right">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
     </footer>
     <script type="text/javascript" src="index.js"></script>
 </body>

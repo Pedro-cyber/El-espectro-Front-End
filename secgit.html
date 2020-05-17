@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg">
     <title>Git</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <h1>El espectro Front-End</h1>
-        </a>
+        <img id="back" src="img/back.svg" alt="">
+        <div class="headlogo">
+            <a href="index.html">
+                <h1>El espectro Front-End</h1>
+            </a>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
         <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
         <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
         <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
@@ -31,14 +36,31 @@
     </header>
     <main class="sec">
         <h2>Git</h2>
-        <img src="img/git.png" alt="Git" title="Git">
+        <picture id="highlight">
+            <source srcset="img/git3x.png" media="(max-width: 450px)">
+            <source srcset="img/git2x.png" media="(max-width: 850px)">
+            <source srcset="img/git1x.png" media="(max-width: 1500px)">
+            <img src="img/git1x.png" alt="Git" title="Git">
+        </picture>
         <p>Es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la
             confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos
             de código fuente. Su propósito es llevar registro de los cambios en archivos de computadora y coordinar el
             trabajo que varias personas realizan sobre archivos compartidos.</p>
+        <picture>
+            <source srcset="img/gitb3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/gitb2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/gitb1x.jpg" media="(max-width: 1500px)">
+            <img src="img/gitb1x.jpg" alt="Git" title="Git">
+        </picture>
         <p>Al principio, Git se pensó como un motor de bajo nivel sobre el cual otros pudieran escribir la interfaz de
             usuario o front end. Sin embargo, Git se ha convertido desde entonces en un sistema de control de versiones
             con funcionalidad plena.</p>
+        <picture>
+            <source srcset="img/gita3x.png" media="(max-width: 450px)">
+            <source srcset="img/gita2x.png" media="(max-width: 850px)">
+            <source srcset="img/gita1x.png" media="(max-width: 1500px)">
+            <img src="img/gita1x.png" alt="Git" title="Git">
+        </picture>
         <p>Git plantea una gran libertad en la forma de trabajar en torno a un proyecto. Sin embargo, para coordinar el
             trabajo de un grupo de personas en torno a un proyecto es necesario acordar como se va a trabajar con Git. A
             estos acuerdos se les llama flujo de trabajo. Un flujo de trabajo de Git es una fórmula o una recomendación
@@ -63,8 +85,25 @@
         </ul>
     </main>
     <footer>
-        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
-            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+        <picture class="clip-footer-left">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <h3>El espectro Front-End</h3>
+        <picture class="clip-footer-center">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <picture class="clip-footer-right">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
     </footer>
     <script type="text/javascript" src="index.js"></script>
 </body>

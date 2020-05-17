@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg">
     <title>NPM</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <h1>El espectro Front-End</h1>
-        </a>
+        <img id="back" src="img/back.svg" alt="">
+        <div class="headlogo">
+            <a href="index.html">
+                <h1>El espectro Front-End</h1>
+            </a>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
         <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
         <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
         <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
@@ -31,14 +36,31 @@
     </header>
     <main class="sec">
         <h2>NPM</h2>
-        <img src="img/npm.png" alt="NPM" title="NPM">
+        <picture id="highlight">
+            <source srcset="img/npm3x.png" media="(max-width: 450px)">
+            <source srcset="img/npm2x.png" media="(max-width: 850px)">
+            <source srcset="img/npm1x.png" media="(max-width: 1500px)">
+            <img src="img/npm1x.png" alt="NPM" title="NPM">
+        </picture>
         <p>Es el sistema de gestión de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript, bajo
             Artistic License 2.0.</p>
+        <picture>
+            <source srcset="img/npmb3x.png" media="(max-width: 450px)">
+            <source srcset="img/npmb2x.png" media="(max-width: 850px)">
+            <source srcset="img/npmb1x.png" media="(max-width: 1500px)">
+            <img src="img/npmb1x.png" alt="NPM" title="NPM">
+        </picture>
         <p>Desde la versión 0.6.3 de Node.js npm es instalado automáticamente con el entorno. npm se ejecuta desde la
             línea de comandos y maneja las dependencias para una aplicación. Además, permite a los usuarios instalar
             aplicaciones Node.js que se encuentran en el repositorio. npm está escrito enteramente en JavaScript y fue
             desarrollado por Isaac Z. Schlueter a raíz de la frustración que experimentó mientras trabajaba con CommonJS
             y considerando las deficiencias de otros proyectos similares como PHP (PEAR) y Perl (CPAN)</p>
+        <picture>
+            <source srcset="img/npma3x.gif" media="(max-width: 450px)">
+            <source srcset="img/npma2x.gif" media="(max-width: 850px)">
+            <source srcset="img/npma1x.gif" media="(max-width: 1500px)">
+            <img src="img/npma1x.gif" alt="NPM" title="NPM">
+        </picture>
         <p>La compañía encargada de distribuir el software tiene el nombre de Npm, Inc. con sede central en Oakland,
             California, Estados Unidos. El Director ejecutivo Bryan Bogensberger entro a la compañía en julio del 2018
             resignado en septiembre del año 2019. Después de su resignación, la cofundadora de Npm, Inc. Laurie Voss
@@ -64,8 +86,25 @@
         </ul>
     </main>
     <footer>
-        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
-            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+        <picture class="clip-footer-left">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <h3>El espectro Front-End</h3>
+        <picture class="clip-footer-center">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <picture class="clip-footer-right">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
     </footer>
     <script type="text/javascript" src="index.js"></script>
 </body>

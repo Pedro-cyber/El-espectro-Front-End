@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg">
     <title>JS & CSS Preprocessors</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <h1>El espectro Front-End</h1>
-        </a>
+        <img id="back" src="img/back.svg" alt="">
+        <div class="headlogo">
+            <a href="index.html">
+                <h1>El espectro Front-End</h1>
+            </a>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
         <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
         <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
         <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
@@ -33,20 +38,55 @@
         <h2>JS & CSS Preprocessors</h2>
         <div>
             <a href="secbabel.html">
-                <img src="img/babel.png" alt="Babel" title="Babel">
+                <picture>
+                    <source srcset="img/babel3x.png" media="(max-width: 450px)">
+                    <source srcset="img/babel2x.png" media="(max-width: 850px)">
+                    <source srcset="img/babel1x.png" media="(max-width: 1500px)">
+                    <img src="img/babel1x.png" alt="Babel" title="Babel">
+                </picture>
+
             </a>
             <a href="">
-                <img src="img/coffeescript.png" alt="CoffeScript" title="CoffeScript">
+                <picture>
+                    <source srcset="img/coffeescript3x.png" media="(max-width: 450px)">
+                    <source srcset="img/coffeescript2x.png" media="(max-width: 850px)">
+                    <source srcset="img/coffeescript1x.png" media="(max-width: 1500px)">
+                    <img src="img/coffeescript1x.png" alt="CoffeScript" title="CoffeScript">
+                </picture>
+
             </a>
             <a href="">
-                <img src="img/sass.png" alt="Sass" title="Sass">
+                <picture>
+                    <source srcset="img/sass3x.png" media="(max-width: 450px)">
+                    <source srcset="img/sass2x.png" media="(max-width: 850px)">
+                    <source srcset="img/sass1x.png" media="(max-width: 1500px)">
+                    <img src="img/sass1x.png" alt="Sass" title="Sass">
+                </picture>
+
             </a>
         </div>
 
     </main>
     <footer>
-        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
-            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+        <picture class="clip-footer-left">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <h3>El espectro Front-End</h3>
+        <picture class="clip-footer-center">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <picture class="clip-footer-right">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
     </footer>
     <script type="text/javascript" src="index.js"></script>
 </body>

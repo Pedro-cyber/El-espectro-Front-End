@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg">
     <title>Version control</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <h1>El espectro Front-End</h1>
-        </a>
+        <img id="back" src="img/back.svg" alt="">
+        <div class="headlogo">
+            <a href="index.html">
+                <h1>El espectro Front-End</h1>
+            </a>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
         <p class="sub">Todo lo que necesitas saber sobre el desarrollo Front</p>
         <div id="open"><a id="abrir" class="abrir-cerrar"><i class="fas fa-bars"></i></a></div>
         <div id="close"><a id="cerrar" class="abrir-cerrar"><i class="far fa-times-circle"></i></a></div>
@@ -33,19 +38,51 @@
         <h2>Version control</h2>
         <div>
             <a href="secgit.html">
-                <img src="img/git.png" alt="Git" title="Git">
+                <picture>
+                    <source srcset="img/git3x.png" media="(max-width: 450px)">
+                    <source srcset="img/git2x.png" media="(max-width: 850px)">
+                    <source srcset="img/git1x.png" media="(max-width: 1500px)">
+                    <img src="img/git1x.png" alt="Git" title="Git">
+                </picture>
             </a>
             <a href="">
-                <img src="img/subversion1.png" alt="Subversion" title="Subversion">
+                <picture>
+                    <source srcset="img/subversion3x.png" media="(max-width: 450px)">
+                    <source srcset="img/subversion2x.png" media="(max-width: 850px)">
+                    <source srcset="img/subversion1x.png" media="(max-width: 1500px)">
+                    <img src="img/subversion1x.png" alt="Subversion" title="Subversion">
+                </picture>
             </a>
             <a href="">
-                <img src="img/mercurial1.png" alt="Mercurial" title="Mercurial">
+                <picture>
+                    <source srcset="img/mercurial3x.png" media="(max-width: 450px)">
+                    <source srcset="img/mercurial2x.png" media="(max-width: 850px)">
+                    <source srcset="img/mercurial1x.png" media="(max-width: 1500px)">
+                    <img src="img/mercurial1x.png" alt="Mercurial" title="Mercurial">
+                </picture>
             </a>
         </div>
     </main>
     <footer>
-        <p><abbr title="Copyright">©</abbr> 2019-2020 Pedro García Jiménez. Trabajo realizado para la asignatura
-            Herramientas HTML y CSS. Segundo semestre del curso 2019-2020</p>
+        <picture class="clip-footer-left">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <h3>El espectro Front-End</h3>
+        <picture class="clip-footer-center">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
+        <picture class="clip-footer-right">
+            <source srcset="img/footer3x.jpg" media="(max-width: 450px)">
+            <source srcset="img/footer2x.jpg" media="(max-width: 850px)">
+            <source srcset="img/footer1x.jpg" media="(max-width: 1500px)">
+            <img src="img/footer1x.jpg" alt="">
+        </picture>
     </footer>
     <script type="text/javascript" src="index.js"></script>
 </body>

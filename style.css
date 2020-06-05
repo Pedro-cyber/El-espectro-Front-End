@@ -58,6 +58,7 @@ header img, footer img{
     margin-bottom:15px;
    
 }
+
 .clip-footer-left{
     clip-path: polygon(100% 0%, 48% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0);
     width:10%;
@@ -131,9 +132,8 @@ a h2:hover{
     transition: 0.4s;
 }
 .abrir-cerrar{
-    margin:25px;
-    font-size:2em;
-    color:var(--texto2);
+   width:8vw;
+ 
 }
 .sidebar ul {
     display: block;
@@ -163,6 +163,11 @@ a h2:hover{
 }
 
 @media screen and (min-width: 700px) {
+
+    .icon{
+        width: 3vw;;
+      
+    }
     .ind{
         margin: auto;
         max-width:70%;
@@ -181,6 +186,10 @@ a h2:hover{
 }
 
 @media screen and (min-width: 1024px) {
+
+    .icon{
+        width: 3 vw;
+    }
 
       @keyframes pagina {
         0% {
